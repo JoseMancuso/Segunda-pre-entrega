@@ -28,7 +28,9 @@ Colores alternativos:
     box-sizing: border-box;
 }
 
-/* Estilos del header */
+
+/* -- Estilos del header -- */
+
 
 header {
     background-color: #212322;
@@ -62,3 +64,40 @@ header {
     background-color: white;
     border-radius: 5px;
 }
+
+
+/*  -- Estilos del footer -- */
+
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #FFC72C;
+}
+
+footer .text-center{
+    color: #212322;
+    font-family: NexaBold;
+    font-size: larger;
+    
+}
+
+.btn{
+    background-color: #212322;
+    border-color: #212322;
+    color: #FFC72C;
+}
+
+.btn a{
+    color: #FFC72C;
+}
+
+.btn:hover{
+    background-color: white;
+    color: #212322;
+}
+
+
+
+
