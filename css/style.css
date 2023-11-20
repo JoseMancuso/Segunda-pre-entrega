@@ -1,5 +1,64 @@
+/* Paleta de colores de la marca:
+Color principal: #FFC72C (Amarillo)
+Color secundario: #212322 (Negro)
+Colores alternativos:
+#ECB3CB (Rosa)
+#5E8AB4 (Azul)
+#FA4616 (Rojo)
+*/
+
+@font-face {
+    font-family: Stinger; 
+    src: url(/fonts/StingerFitTrial-Bold.ttf)
+}
+
+@font-face {
+    font-family: Nexa;
+    src: url(/fonts/Nexa\ Light.otf)
+}
+
+@font-face {
+    font-family: NexaBold;
+    src: url(/fonts/Nexa\ Bold.otf);
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* Estilos del header */
+
+header {
+    background-color: #212322;
+    font-family: Stinger;
+    font-size: larger;
+}
+
+.nav-link{
+    color: #FFC72C;
+}
+
+.nav-link:hover{
+    color:white;
+}
+
+.navbar-toggler-icon{
+    background-color: #FFC72C;
+}
+
+#delivery{
+    background-color: #FFC72C;
+    margin: 0px;
+    border-radius: 5px;
+}
+
+#delivery a{
+    color: #212322;
+}
+
+#delivery a:hover{
+    background-color: white;
+    border-radius: 5px;
 }
