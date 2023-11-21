@@ -143,12 +143,16 @@ body{
     margin: 5px;
 }
 
+.carta h4{
+    margin: 5px;
+}
+
 .item{
     border: 3px solid #212322;
     background-size: cover;
     background-position: center;
     border-radius: 5px;
-    height: 80%;
+    height: 90%;
     filter: grayscale();
     transition: all 0.9s;
 }
@@ -213,6 +217,13 @@ body{
     }
 }
 
+@media only screen and (min-width: 200px){
+    h4{
+        font-size: small;
+    }
+}
+
+
 @media only screen and (min-width: 480px){
     .galeria{
         grid-template-columns: 1fr 1fr;
@@ -233,7 +244,7 @@ body{
         grid-template-rows: repeat(3, 350px);
     }
     
-    p{
+    h4{
         font-size: large;
     }
 }
@@ -244,9 +255,28 @@ body{
         grid-template-rows: repeat(3, 500px);
     }
     
-    p{
+    h4{
         font-size: larger;
     }
+}
+
+
+/* Estilos del index.html */
+
+
+.index{
+    text-align: center;
+    padding: 20px;
+    font-family: Nexa;
+    font-weight: bolder;
+}
+
+.index h3{
+    font-family: Stinger;
+}
+
+.row{
+    padding-bottom: 20px;
 }
 
 
