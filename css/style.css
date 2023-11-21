@@ -70,27 +70,30 @@ header {
 
 
 footer{
-    position: absolute;
     bottom: 0;
     width: 100%;
-    background-color: #FFC72C;
+    background-color: #212322;
+    color: #FFC72C;
+    text-align: center;
+    z-index: 1;
+    padding: 15px 0;
 }
 
 footer .text-center{
-    color: #212322;
+    color: #FFC72C;
     font-family: NexaBold;
     font-size: larger;
     
 }
 
 .btn{
-    background-color: #212322;
-    border-color: #212322;
-    color: #FFC72C;
+    background-color: #FFC72C;
+    border-color: #FFC72C;
+    color: #212322;
 }
 
 .btn a{
-    color: #FFC72C;
+    color: #212322;
 }
 
 .btn:hover{
@@ -99,5 +102,151 @@ footer .text-center{
 }
 
 
+
+/* -- Estilos de empanadas.html -- */
+
+
+body{
+    background-color: #FFC72C;
+}
+
+#nuestros-sabores{
+    text-align: center;
+    background-color: #FFC72C;
+    color: black;
+    font-size: 35px;
+    text-shadow: 0 0 2px white;
+    margin-bottom: 0;
+    font-family: Stinger;
+    padding-top: 15px;
+}
+
+.galeria{
+    background-color: #FFC72C;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, 150px);
+    padding: 15px;
+    grid-gap: 15px;
+}
+
+.carta{
+    background-color: #212322;
+    color: #FFC72C;
+    border-radius: 5px;
+    text-align: center;
+    font-family: NexaBold;
+}
+
+.carta p{
+    margin: 5px;
+}
+
+.item{
+    border: 3px solid #212322;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    height: 80%;
+    filter: grayscale();
+    transition: all 0.9s;
+}
+
+.item:hover{
+    transform: scale(1.04);
+    filter: grayscale(0%);
+}
+
+.item1{
+    background-image: url(/img/berenjena.jpg);
+}
+
+.item2{
+    background-image: url(/img/bondio.jpg);
+}
+
+.item3{
+    background-image: url(/img/calabaza.jpg);
+}
+
+.item4{
+    background-image: url(/img/caprese.jpg);
+}
+
+.item5{
+    background-image: url(/img/carnemalbec.jpg);
+}
+
+.item6{
+    background-image: url(/img/carnemorron.jpg);
+}
+
+.item7{
+    background-image: url(/img/humita.jpg);
+}
+
+.item8{
+    background-image: url(/img/jamonqueso.jpg);
+}
+
+.item9{
+    background-image: url(/img/pirok.jpg);
+}
+
+.item10{
+    background-image: url(/img/polloverderoque.jpg);
+}
+
+.item11{
+    background-image: url(/img/roquecebo.jpg);
+}
+
+.item12{
+    background-image: url(/img/teriyaki.jpg);
+}
+
+
+@media only screen and (max-width: 767px){
+    .item{
+        filter: none;
+    }
+}
+
+@media only screen and (min-width: 480px){
+    .galeria{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(6, 150px);
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .galeria{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(4, 230px);
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .galeria{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: repeat(3, 350px);
+    }
+    
+    p{
+        font-size: large;
+    }
+}
+
+@media only screen and (min-width: 1600px){
+    .galeria{
+        grid-template-columns: 2fr 2fr 2fr 2fr;
+        grid-template-rows: repeat(3, 500px);
+    }
+    
+    p{
+        font-size: larger;
+    }
+}
 
 
