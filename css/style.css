@@ -70,7 +70,7 @@ header {
 
 
 footer{
-    bottom: 0;
+    
     width: 100%;
     background-color: #212322;
     color: #FFC72C;
@@ -107,12 +107,12 @@ footer .text-center{
 
 
 body{
-    background-color: #FFC72C;
+    background-color: #ECB3CB;
 }
 
 #nuestros-sabores{
+    background-color: #ECB3CB;
     text-align: center;
-    background-color: #FFC72C;
     color: black;
     font-size: 35px;
     text-shadow: 0 0 2px white;
@@ -122,7 +122,7 @@ body{
 }
 
 .galeria{
-    background-color: #FFC72C;
+    background-color: #ECB3CB;
     height: auto;
     display: grid;
     grid-template-columns: 1fr;
@@ -221,6 +221,10 @@ body{
     h4{
         font-size: small;
     }
+
+    #myCarousel{
+        height: 20vh;
+    }
 }
 
 
@@ -229,12 +233,20 @@ body{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(6, 150px);
     }
+
+    #myCarousel{
+        height: 35vh;
+    }
 }
 
 @media only screen and (min-width: 768px){
     .galeria{
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: repeat(4, 230px);
+    }
+
+    #myCarousel{
+        height: 45vh;
     }
 }
 
@@ -247,6 +259,10 @@ body{
     h4{
         font-size: large;
     }
+
+    #myCarousel{
+        height: 65vh;
+    }
 }
 
 @media only screen and (min-width: 1600px){
@@ -258,7 +274,12 @@ body{
     h4{
         font-size: larger;
     }
+
+    #myCarousel{
+        height: 60vh;
+    }
 }
+
 
 
 /* Estilos del index.html */
@@ -280,3 +301,133 @@ body{
 }
 
 
+/* Estilos "delivery.html" */
+
+
+.delivery{
+    height: 100vh;
+}
+
+.deliverymain{
+    width: 100%;
+}
+
+.deliverymain img{
+    float: left;
+    padding: 30px;
+}
+
+.deliverymain h1{
+    padding: 40px;
+    font-family: Stinger;
+    font-size: 50px;
+    text-align: center;
+
+
+}
+
+.deliverymain h2{
+    font-family: Stinger;
+    font-size: 40px;
+    text-align: center;   
+    padding-top: 10px;
+}
+
+.deliverymain h3{
+    font-family: Stinger;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.deliverymain p{
+    font-family: NexaBold;
+    font-size: 20px;
+    text-align: center;
+}
+
+.deliverybot a{
+    text-decoration: none;
+    color: #FFC72C;
+    padding: 15px;
+}
+
+.deliverybot{
+    text-align: center;
+    padding-top: 70px;
+}
+
+#deliverylogo{
+    padding-left: 560px;    
+    padding-top: 80px;
+}
+
+/* Fin estilos "delivery.html" */
+
+
+    /* Estilos "nietos.html" */
+
+.mainnietos{
+    background-color: #ECB3CB;
+    background-position: center;
+    height: 100vh;
+}
+
+.mainnietos h1{
+    text-align: center;
+    font-family: Stinger;
+    padding: 20px;
+}
+
+.gotodelivery{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gotodelivery h2{
+    text-align: center;
+    font-family: Stinger;
+}
+
+.gotodelivery a{
+    text-decoration: none;
+    background-color: #FFC72C;
+    color: #212322;
+    padding: 25px;
+    font-size: larger;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-family: NexaBold;
+    display: inline-block;
+    
+}
+
+.carousel-inner{
+    height: 70vh;
+}
+
+    /* Fin de estilos "nietos.html" */   
+
+
+    /* Estilos de "contacto.html" */   
+
+.contacto{
+    height: 90vh;
+    padding: 20px;
+    text-align: center;
+    font-family: Stinger;
+}
+
+#contactbtn, #contactbtncv{
+    background-color: #212322;
+    color: #FFC72C;
+}
+
+#contactbtn:hover, #contactbtncv:hover{
+    background-color: white;
+    color: #212322;
+}
+
+    /* Fin de estilos "contacto.html" */   
