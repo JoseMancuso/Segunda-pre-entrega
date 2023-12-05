@@ -9,17 +9,17 @@ Colores alternativos:
 
 @font-face {
     font-family: Stinger; 
-    src: url(/fonts/StingerFitTrial-Bold.ttf)
+    src: url(../fonts/StingerFitTrial-Bold.ttf)
 }
 
 @font-face {
     font-family: Nexa;
-    src: url(/fonts/Nexa\ Light.otf)
+    src: url(../fonts/Nexa\ Light.otf)
 }
 
 @font-face {
     font-family: NexaBold;
-    src: url(/fonts/Nexa\ Bold.otf);
+    src: url(../fonts/Nexa\ Bold.otf);
 }
 
 *{
@@ -163,51 +163,51 @@ body{
 }
 
 .item1{
-    background-image: url(/img/berenjena.jpg);
+    background-image: url(../img/berenjena.jpg);
 }
 
 .item2{
-    background-image: url(/img/bondio.jpg);
+    background-image: url(../img/bondio.jpg);
 }
 
 .item3{
-    background-image: url(/img/calabaza.jpg);
+    background-image: url(../img/calabaza.jpg);
 }
 
 .item4{
-    background-image: url(/img/caprese.jpg);
+    background-image: url(../img/caprese.jpg);
 }
 
 .item5{
-    background-image: url(/img/carnemalbec.jpg);
+    background-image: url(../img/carnemalbec.jpg);
 }
 
 .item6{
-    background-image: url(/img/carnemorron.jpg);
+    background-image: url(../img/carnemorron.jpg);
 }
 
 .item7{
-    background-image: url(/img/humita.jpg);
+    background-image: url(../img/humita.jpg);
 }
 
 .item8{
-    background-image: url(/img/jamonqueso.jpg);
+    background-image: url(../img/jamonqueso.jpg);
 }
 
 .item9{
-    background-image: url(/img/pirok.jpg);
+    background-image: url(../img/pirok.jpg);
 }
 
 .item10{
-    background-image: url(/img/polloverderoque.jpg);
+    background-image: url(../img/polloverderoque.jpg);
 }
 
 .item11{
-    background-image: url(/img/roquecebo.jpg);
+    background-image: url(../img/roquecebo.jpg);
 }
 
 .item12{
-    background-image: url(/img/teriyaki.jpg);
+    background-image: url(../img/teriyaki.jpg);
 }
 
 
