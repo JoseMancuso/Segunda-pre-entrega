@@ -301,70 +301,6 @@ body{
 }
 
 
-/* Estilos "delivery.html" */
-
-
-.delivery{
-    height: 100vh;
-}
-
-.deliverymain{
-    width: 100%;
-}
-
-.deliverymain img{
-    float: left;
-    padding: 30px;
-}
-
-.deliverymain h1{
-    padding: 40px;
-    font-family: Stinger;
-    font-size: 50px;
-    text-align: center;
-
-
-}
-
-.deliverymain h2{
-    font-family: Stinger;
-    font-size: 40px;
-    text-align: center;   
-    padding-top: 10px;
-}
-
-.deliverymain h3{
-    font-family: Stinger;
-    font-size: 30px;
-    text-align: center;
-    padding-top: 50px;
-}
-
-.deliverymain p{
-    font-family: NexaBold;
-    font-size: 20px;
-    text-align: center;
-}
-
-.deliverybot a{
-    text-decoration: none;
-    color: #FFC72C;
-    padding: 15px;
-}
-
-.deliverybot{
-    text-align: center;
-    padding-top: 70px;
-}
-
-#deliverylogo{
-    padding-left: 560px;    
-    padding-top: 80px;
-}
-
-/* Fin estilos "delivery.html" */
-
-
     /* Estilos "nietos.html" */
 
 .mainnietos{
@@ -415,9 +351,10 @@ body{
 
 .contacto{
     height: 90vh;
-    padding: 20px;
+    padding: 50px;
     text-align: center;
     font-family: Stinger;
+    color: #FA4616;
 }
 
 #contactbtn, #contactbtncv{
@@ -430,4 +367,53 @@ body{
     color: #212322;
 }
 
+@media only screen and (max-width: 767px){
+    .contacto{
+        height: fit-content;
+        padding: 10px;
+        font-size: smaller;
+    }
+}
+
     /* Fin de estilos "contacto.html" */   
+
+
+    /* Estilos "delivery.html" */
+
+.delivery h1{
+    font-family: Stinger;
+}
+
+.delivery{
+    text-align: center;
+    padding: 20px;
+    font-family: NexaBold;
+}
+
+.deliverybot{
+    padding: 20px;
+}
+
+.deliverybot a{
+    padding: 15px;
+}
+
+#imgdelivery{
+    width: 100%;
+}
+
+#deliverylogo{
+    width: 100%;
+}
+
+#leftcol{
+    margin-bottom: 37px;
+}
+
+@media only screen and (min-width: 992px){
+    .delivery{
+        padding: 60px;
+    }
+}
+
+/* Fin estilos "delivery.html" */
