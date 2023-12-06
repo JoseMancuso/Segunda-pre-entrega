@@ -1,0 +1,335 @@
+/* Colores */
+
+$color_1: #FFC72C;
+$color_2: white;
+$color_3: #212322;
+$color_4: black;
+$color_5: #FA4616;
+
+/* Fuentes */
+
+$font-family_1: Stinger;
+$font-family_2: NexaBold;
+$font-family_3: Nexa;
+
+/* Colores backgrounds */
+
+$background-color_1: #212322;
+$background-color_2: #FFC72C;
+$background-color_3: white;
+$background-color_4: #ECB3CB;
+$border-color_1: #FFC72C;
+
+@font-face {
+	font-family: Stinger;
+	src: url(../fonts/StingerFitTrial-Bold.ttf);
+}
+@font-face {
+	font-family: Nexa;
+	src: url(../fonts/Nexa\ Light.otf);
+}
+@font-face {
+	font-family: NexaBold;
+	src: url(../fonts/Nexa\ Bold.otf);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+header {
+	background-color: $background-color_1;
+	font-family: $font-family_1;
+	font-size: larger;
+}
+.nav-link {
+	color: $color_1;
+	&:hover {
+		color: $color_2;
+	}
+}
+.navbar-toggler-icon {
+	background-color: $background-color_2;
+}
+#delivery {
+	background-color: $background-color_2;
+	margin: 0px;
+	border-radius: 5px;
+	a {
+		color: $color_3;
+		&:hover {
+			background-color: $background-color_3;
+			border-radius: 5px;
+		}
+	}
+}
+footer {
+	width: 100%;
+	background-color: $background-color_1;
+	color: $color_1;
+	text-align: center;
+	z-index: 1;
+	padding: 15px 0;
+	.text-center {
+		color: $color_1;
+		font-family: $font-family_2;
+		font-size: larger;
+	}
+}
+.btn {
+	background-color: $background-color_2;
+	border-color: $border-color_1;
+	color: $color_3;
+	a {
+		color: $color_3;
+	}
+	&:hover {
+		background-color: $background-color_3;
+		color: $color_3;
+	}
+}
+body {
+	background-color: $background-color_4;
+}
+#nuestros-sabores {
+	background-color: $background-color_4;
+	text-align: center;
+	color: $color_4;
+	font-size: 35px;
+	text-shadow: 0 0 2px white;
+	margin-bottom: 0;
+	font-family: $font-family_1;
+	padding-top: 15px;
+}
+.galeria {
+	background-color: $background-color_4;
+	height: auto;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(12, 150px);
+	padding: 15px;
+	grid-gap: 15px;
+}
+.carta {
+	background-color: $background-color_1;
+	color: $color_1;
+	border-radius: 5px;
+	text-align: center;
+	font-family: $font-family_2;
+	p {
+		margin: 5px;
+	}
+	h4 {
+		margin: 5px;
+	}
+}
+.item {
+	border: 3px solid #212322;
+	background-size: cover;
+	background-position: center;
+	border-radius: 5px;
+	height: 90%;
+	filter: grayscale(100%);
+	transition: all 0.9s;
+	&:hover {
+		transform: scale(1.04);
+		filter: grayscale(0%);
+	}
+}
+.item1 {
+	background-image: url(../img/berenjena.jpg);
+}
+.item2 {
+	background-image: url(../img/bondio.jpg);
+}
+.item3 {
+	background-image: url(../img/calabaza.jpg);
+}
+.item4 {
+	background-image: url(../img/caprese.jpg);
+}
+.item5 {
+	background-image: url(../img/carnemalbec.jpg);
+}
+.item6 {
+	background-image: url(../img/carnemorron.jpg);
+}
+.item7 {
+	background-image: url(../img/humita.jpg);
+}
+.item8 {
+	background-image: url(../img/jamonqueso.jpg);
+}
+.item9 {
+	background-image: url(../img/pirok.jpg);
+}
+.item10 {
+	background-image: url(../img/polloverderoque.jpg);
+}
+.item11 {
+	background-image: url(../img/roquecebo.jpg);
+}
+.item12 {
+	background-image: url(../img/teriyaki.jpg);
+}
+.index {
+	text-align: center;
+	padding: 20px;
+	font-family: $font-family_3;
+	font-weight: bolder;
+	h3 {
+		font-family: $font-family_1;
+	}
+}
+.row {
+	padding-bottom: 20px;
+}
+.mainnietos {
+	background-color: $background-color_4;
+	background-position: center;
+	height: 100vh;
+	h1 {
+		text-align: center;
+		font-family: $font-family_1;
+		padding: 20px;
+	}
+}
+.gotodelivery {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	h2 {
+		text-align: center;
+		font-family: $font-family_1;
+	}
+	a {
+		text-decoration: none;
+		background-color: $background-color_2;
+		color: $color_3;
+		padding: 25px;
+		font-size: larger;
+		border-radius: 10px;
+		margin-top: 20px;
+		font-family: $font-family_2;
+		display: inline-block;
+	}
+}
+.carousel-inner {
+	height: 70vh;
+}
+.contacto {
+	height: 90vh;
+	padding: 50px;
+	text-align: center;
+	font-family: $font-family_1;
+	color: $color_5;
+	form {
+		font-family: $font-family_2;
+	}
+}
+#contactbtn {
+	background-color: $background-color_1;
+	color: $color_1;
+	&:hover {
+		background-color: $background-color_3;
+		color: $color_3;
+	}
+}
+#contactbtncv {
+	background-color: $background-color_1;
+	color: $color_1;
+	&:hover {
+		background-color: $background-color_3;
+		color: $color_3;
+	}
+}
+.delivery {
+	h1 {
+		font-family: $font-family_1;
+	}
+	text-align: center;
+	padding: 20px;
+	font-family: $font-family_2;
+}
+.deliverybot {
+	padding: 20px;
+	a {
+		padding: 15px;
+	}
+}
+#imgdelivery {
+	width: 100%;
+}
+#deliverylogo {
+	width: 100%;
+}
+#leftcol {
+	margin-bottom: 37px;
+}
+@media only screen and (max-width: 767px) {
+	.item {
+		filter: none;
+	}
+	.contacto {
+		height: fit-content;
+		padding: 10px;
+		font-size: smaller;
+	}
+}
+@media only screen and (min-width: 200px) {
+	h4 {
+		font-size: small;
+	}
+	#myCarousel {
+		height: 20vh;
+	}
+}
+@media only screen and (min-width: 480px) {
+	.galeria {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: repeat(6, 150px);
+	}
+	#myCarousel {
+		height: 35vh;
+	}
+}
+@media only screen and (min-width: 768px) {
+	.galeria {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: repeat(4, 230px);
+	}
+	#myCarousel {
+		height: 45vh;
+	}
+}
+@media only screen and (min-width: 1200px) {
+	.galeria {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: repeat(3, 350px);
+	}
+	h4 {
+		font-size: large;
+	}
+	#myCarousel {
+		height: 65vh;
+	}
+}
+@media only screen and (min-width: 1600px) {
+	.galeria {
+		grid-template-columns: 2fr 2fr 2fr 2fr;
+		grid-template-rows: repeat(3, 500px);
+	}
+	h4 {
+		font-size: larger;
+	}
+	#myCarousel {
+		height: 60vh;
+	}
+}
+@media only screen and (min-width: 992px) {
+	.delivery {
+		padding: 60px;
+	}
+}
