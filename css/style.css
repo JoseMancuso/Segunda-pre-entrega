@@ -1,419 +1,354 @@
-/* Paleta de colores de la marca:
-Color principal: #FFC72C (Amarillo)
-Color secundario: #212322 (Negro)
-Colores alternativos:
-#ECB3CB (Rosa)
-#5E8AB4 (Azul)
-#FA4616 (Rojo)
-*/
-
+/* Colores */
+/* Fuentes */
+/* Colores background y bordes */
 @font-face {
-    font-family: Stinger; 
-    src: url(../fonts/StingerFitTrial-Bold.ttf)
+  font-family: Stinger;
+  src: url(../fonts/StingerFitTrial-Bold.ttf);
 }
-
 @font-face {
-    font-family: Nexa;
-    src: url(../fonts/Nexa\ Light.otf)
+  font-family: Nexa;
+  src: url(../fonts/Nexa\ Light.otf);
 }
-
 @font-face {
-    font-family: NexaBold;
-    src: url(../fonts/Nexa\ Bold.otf);
+  font-family: NexaBold;
+  src: url(../fonts/Nexa\ Bold.otf);
 }
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-
-/* -- Estilos del header -- */
-
 
 header {
-    background-color: #212322;
-    font-family: Stinger;
+  background-color: #212322;
+  font-family: Stinger;
+  font-size: larger;
+}
+
+.nav-link {
+  color: #FFC72C;
+}
+.nav-link:hover {
+  color: white;
+}
+
+.navbar-toggler-icon {
+  background-color: #FFC72C;
+}
+
+#delivery {
+  background-color: #FFC72C;
+  margin: 0px;
+  border-radius: 5px;
+}
+#delivery a {
+  color: #212322;
+}
+#delivery a:hover {
+  background-color: white;
+  border-radius: 5px;
+}
+
+footer {
+  width: 100%;
+  background-color: #212322;
+  color: #FFC72C;
+  text-align: center;
+  z-index: 1;
+  padding: 15px 0;
+}
+footer .text-center {
+  color: #FFC72C;
+  font-family: NexaBold;
+  font-size: larger;
+}
+
+.btn {
+  background-color: #FFC72C;
+  border-color: #FFC72C;
+  color: #212322;
+}
+.btn a {
+  color: #212322;
+}
+.btn:hover {
+  background-color: white;
+  color: #212322;
+}
+
+body {
+  background-color: #ECB3CB;
+}
+
+#nuestros-sabores {
+  background-color: #ECB3CB;
+  text-align: center;
+  color: black;
+  font-size: 35px;
+  text-shadow: 0 0 2px white;
+  margin-bottom: 0;
+  font-family: Stinger;
+  padding-top: 15px;
+}
+
+.galeria {
+  background-color: #ECB3CB;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(12, 150px);
+  padding: 15px;
+  grid-gap: 15px;
+}
+
+.carta {
+  background-color: #212322;
+  color: #FFC72C;
+  border-radius: 5px;
+  text-align: center;
+  font-family: NexaBold;
+}
+.carta p {
+  margin: 5px;
+}
+.carta h4 {
+  margin: 5px;
+}
+
+.item {
+  border: 3px solid #212322;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  height: 90%;
+  filter: grayscale(100%);
+  transition: all 0.9s;
+}
+.item:hover {
+  transform: scale(1.04);
+  filter: grayscale(0%);
+}
+
+.item1 {
+  background-image: url(../img/berenjena.jpg);
+}
+
+.item2 {
+  background-image: url(../img/bondio.jpg);
+}
+
+.item3 {
+  background-image: url(../img/calabaza.jpg);
+}
+
+.item4 {
+  background-image: url(../img/caprese.jpg);
+}
+
+.item5 {
+  background-image: url(../img/carnemalbec.jpg);
+}
+
+.item6 {
+  background-image: url(../img/carnemorron.jpg);
+}
+
+.item7 {
+  background-image: url(../img/humita.jpg);
+}
+
+.item8 {
+  background-image: url(../img/jamonqueso.jpg);
+}
+
+.item9 {
+  background-image: url(../img/pirok.jpg);
+}
+
+.item10 {
+  background-image: url(../img/polloverderoque.jpg);
+}
+
+.item11 {
+  background-image: url(../img/roquecebo.jpg);
+}
+
+.item12 {
+  background-image: url(../img/teriyaki.jpg);
+}
+
+.index {
+  text-align: center;
+  padding: 20px;
+  font-family: Nexa;
+  font-weight: bolder;
+}
+.index h3 {
+  font-family: Stinger;
+}
+
+.row {
+  padding-bottom: 20px;
+}
+
+.mainnietos {
+  background-color: #ECB3CB;
+  background-position: center;
+  height: 100vh;
+}
+.mainnietos h1 {
+  text-align: center;
+  font-family: Stinger;
+  padding: 20px;
+}
+
+.gotodelivery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.gotodelivery h2 {
+  text-align: center;
+  font-family: Stinger;
+}
+.gotodelivery a {
+  text-decoration: none;
+  background-color: #FFC72C;
+  color: #212322;
+  padding: 25px;
+  font-size: larger;
+  border-radius: 10px;
+  margin-top: 20px;
+  font-family: NexaBold;
+  display: inline-block;
+}
+
+.carousel-inner {
+  height: 70vh;
+}
+
+.contacto {
+  height: 90vh;
+  padding: 50px;
+  text-align: center;
+  font-family: Stinger;
+  color: #FA4616;
+}
+.contacto form {
+  font-family: NexaBold;
+}
+
+#contactbtn {
+  background-color: #212322;
+  color: #FFC72C;
+}
+#contactbtn:hover {
+  background-color: white;
+  color: #212322;
+}
+
+#contactbtncv {
+  background-color: #212322;
+  color: #FFC72C;
+}
+#contactbtncv:hover {
+  background-color: white;
+  color: #212322;
+}
+
+.delivery {
+  text-align: center;
+  padding: 20px;
+  font-family: NexaBold;
+}
+.delivery h1 {
+  font-family: Stinger;
+}
+
+.deliverybot {
+  padding: 20px;
+}
+.deliverybot a {
+  padding: 15px;
+}
+
+#imgdelivery {
+  width: 100%;
+}
+
+#deliverylogo {
+  width: 100%;
+}
+
+#leftcol {
+  margin-bottom: 37px;
+}
+
+@media only screen and (max-width: 767px) {
+  .item {
+    filter: none;
+  }
+  .contacto {
+    height: fit-content;
+    padding: 10px;
+    font-size: smaller;
+  }
+}
+@media only screen and (min-width: 200px) {
+  h4 {
+    font-size: small;
+  }
+  #myCarousel {
+    height: 20vh;
+  }
+}
+@media only screen and (min-width: 480px) {
+  .galeria {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6, 150px);
+  }
+  #myCarousel {
+    height: 35vh;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .galeria {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 230px);
+  }
+  #myCarousel {
+    height: 45vh;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .galeria {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 350px);
+  }
+  h4 {
+    font-size: large;
+  }
+  #myCarousel {
+    height: 65vh;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .galeria {
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    grid-template-rows: repeat(3, 500px);
+  }
+  h4 {
     font-size: larger;
+  }
+  #myCarousel {
+    height: 60vh;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .delivery {
+    padding: 60px;
+  }
 }
 
-.nav-link{
-    color: #FFC72C;
-}
-
-.nav-link:hover{
-    color:white;
-}
-
-.navbar-toggler-icon{
-    background-color: #FFC72C;
-}
-
-#delivery{
-    background-color: #FFC72C;
-    margin: 0px;
-    border-radius: 5px;
-}
-
-#delivery a{
-    color: #212322;
-}
-
-#delivery a:hover{
-    background-color: white;
-    border-radius: 5px;
-}
-
-
-/*  -- Estilos del footer -- */
-
-
-footer{
-    
-    width: 100%;
-    background-color: #212322;
-    color: #FFC72C;
-    text-align: center;
-    z-index: 1;
-    padding: 15px 0;
-}
-
-footer .text-center{
-    color: #FFC72C;
-    font-family: NexaBold;
-    font-size: larger;
-    
-}
-
-.btn{
-    background-color: #FFC72C;
-    border-color: #FFC72C;
-    color: #212322;
-}
-
-.btn a{
-    color: #212322;
-}
-
-.btn:hover{
-    background-color: white;
-    color: #212322;
-}
-
-
-
-/* -- Estilos de empanadas.html -- */
-
-
-body{
-    background-color: #ECB3CB;
-}
-
-#nuestros-sabores{
-    background-color: #ECB3CB;
-    text-align: center;
-    color: black;
-    font-size: 35px;
-    text-shadow: 0 0 2px white;
-    margin-bottom: 0;
-    font-family: Stinger;
-    padding-top: 15px;
-}
-
-.galeria{
-    background-color: #ECB3CB;
-    height: auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(12, 150px);
-    padding: 15px;
-    grid-gap: 15px;
-}
-
-.carta{
-    background-color: #212322;
-    color: #FFC72C;
-    border-radius: 5px;
-    text-align: center;
-    font-family: NexaBold;
-}
-
-.carta p{
-    margin: 5px;
-}
-
-.carta h4{
-    margin: 5px;
-}
-
-.item{
-    border: 3px solid #212322;
-    background-size: cover;
-    background-position: center;
-    border-radius: 5px;
-    height: 90%;
-    filter: grayscale();
-    transition: all 0.9s;
-}
-
-.item:hover{
-    transform: scale(1.04);
-    filter: grayscale(0%);
-}
-
-.item1{
-    background-image: url(../img/berenjena.jpg);
-}
-
-.item2{
-    background-image: url(../img/bondio.jpg);
-}
-
-.item3{
-    background-image: url(../img/calabaza.jpg);
-}
-
-.item4{
-    background-image: url(../img/caprese.jpg);
-}
-
-.item5{
-    background-image: url(../img/carnemalbec.jpg);
-}
-
-.item6{
-    background-image: url(../img/carnemorron.jpg);
-}
-
-.item7{
-    background-image: url(../img/humita.jpg);
-}
-
-.item8{
-    background-image: url(../img/jamonqueso.jpg);
-}
-
-.item9{
-    background-image: url(../img/pirok.jpg);
-}
-
-.item10{
-    background-image: url(../img/polloverderoque.jpg);
-}
-
-.item11{
-    background-image: url(../img/roquecebo.jpg);
-}
-
-.item12{
-    background-image: url(../img/teriyaki.jpg);
-}
-
-
-@media only screen and (max-width: 767px){
-    .item{
-        filter: none;
-    }
-}
-
-@media only screen and (min-width: 200px){
-    h4{
-        font-size: small;
-    }
-
-    #myCarousel{
-        height: 20vh;
-    }
-}
-
-
-@media only screen and (min-width: 480px){
-    .galeria{
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(6, 150px);
-    }
-
-    #myCarousel{
-        height: 35vh;
-    }
-}
-
-@media only screen and (min-width: 768px){
-    .galeria{
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: repeat(4, 230px);
-    }
-
-    #myCarousel{
-        height: 45vh;
-    }
-}
-
-@media only screen and (min-width: 1200px){
-    .galeria{
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: repeat(3, 350px);
-    }
-    
-    h4{
-        font-size: large;
-    }
-
-    #myCarousel{
-        height: 65vh;
-    }
-}
-
-@media only screen and (min-width: 1600px){
-    .galeria{
-        grid-template-columns: 2fr 2fr 2fr 2fr;
-        grid-template-rows: repeat(3, 500px);
-    }
-    
-    h4{
-        font-size: larger;
-    }
-
-    #myCarousel{
-        height: 60vh;
-    }
-}
-
-
-
-/* Estilos del index.html */
-
-
-.index{
-    text-align: center;
-    padding: 20px;
-    font-family: Nexa;
-    font-weight: bolder;
-}
-
-.index h3{
-    font-family: Stinger;
-}
-
-.row{
-    padding-bottom: 20px;
-}
-
-
-    /* Estilos "nietos.html" */
-
-.mainnietos{
-    background-color: #ECB3CB;
-    background-position: center;
-    height: 100vh;
-}
-
-.mainnietos h1{
-    text-align: center;
-    font-family: Stinger;
-    padding: 20px;
-}
-
-.gotodelivery{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.gotodelivery h2{
-    text-align: center;
-    font-family: Stinger;
-}
-
-.gotodelivery a{
-    text-decoration: none;
-    background-color: #FFC72C;
-    color: #212322;
-    padding: 25px;
-    font-size: larger;
-    border-radius: 10px;
-    margin-top: 20px;
-    font-family: NexaBold;
-    display: inline-block;
-    
-}
-
-.carousel-inner{
-    height: 70vh;
-}
-
-    /* Fin de estilos "nietos.html" */   
-
-
-    /* Estilos de "contacto.html" */   
-
-.contacto{
-    height: 90vh;
-    padding: 50px;
-    text-align: center;
-    font-family: Stinger;
-    color: #FA4616;
-}
-
-#contactbtn, #contactbtncv{
-    background-color: #212322;
-    color: #FFC72C;
-}
-
-#contactbtn:hover, #contactbtncv:hover{
-    background-color: white;
-    color: #212322;
-}
-
-@media only screen and (max-width: 767px){
-    .contacto{
-        height: fit-content;
-        padding: 10px;
-        font-size: smaller;
-    }
-}
-
-    /* Fin de estilos "contacto.html" */   
-
-
-    /* Estilos "delivery.html" */
-
-.delivery h1{
-    font-family: Stinger;
-}
-
-.delivery{
-    text-align: center;
-    padding: 20px;
-    font-family: NexaBold;
-}
-
-.deliverybot{
-    padding: 20px;
-}
-
-.deliverybot a{
-    padding: 15px;
-}
-
-#imgdelivery{
-    width: 100%;
-}
-
-#deliverylogo{
-    width: 100%;
-}
-
-#leftcol{
-    margin-bottom: 37px;
-}
-
-@media only screen and (min-width: 992px){
-    .delivery{
-        padding: 60px;
-    }
-}
-
-/* Fin estilos "delivery.html" */
+/*# sourceMappingURL=style.css.map */
