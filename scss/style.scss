@@ -12,7 +12,7 @@ $font-family_1: Stinger;
 $font-family_2: NexaBold;
 $font-family_3: Nexa;
 
-/* Colores background y bordes */
+/* Colores backgrounds */
 
 $background-color_1: #212322;
 $background-color_2: #FFC72C;
@@ -38,7 +38,6 @@ $border-color_1: #FFC72C;
 	padding: 0;
 	box-sizing: border-box;
 }
-
 header {
 	background-color: $background-color_1;
 	font-family: $font-family_1;
