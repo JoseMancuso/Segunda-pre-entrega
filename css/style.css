@@ -183,7 +183,7 @@ body {
   font-family: Nexa;
   font-weight: bolder;
 }
-.index h3 {
+.index h1,h2 {
   font-family: Stinger;
 }
 

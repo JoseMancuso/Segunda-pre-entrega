@@ -178,7 +178,7 @@ body {
 	padding: 20px;
 	font-family: $font-family_3;
 	font-weight: bolder;
-	h3 {
+	h1 {
 		font-family: $font-family_1;
 	}
 }
@@ -190,6 +190,11 @@ body {
 	background-position: center;
 	height: 100vh;
 	h1 {
+		text-align: center;
+		font-family: $font-family_1;
+		padding: 20px;
+	}
+	h2 {
 		text-align: center;
 		font-family: $font-family_1;
 		padding: 20px;
