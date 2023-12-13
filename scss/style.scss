@@ -20,6 +20,10 @@ $background-color_3: white;
 $background-color_4: #ECB3CB;
 $border-color_1: #FFC72C;
 
+/* Padding estándar */
+
+$base-padding: 5px;
+
 @font-face {
 	font-family: Stinger;
 	src: url(../fonts/StingerFitTrial-Bold.ttf);
@@ -31,6 +35,15 @@ $border-color_1: #FFC72C;
 @font-face {
 	font-family: NexaBold;
 	src: url(../fonts/Nexa\ Bold.otf);
+}
+
+/* Mixins */
+
+@mixin cartaStyles($bg-color, $text-color, $border-radius, $text-align) {
+	background-color: $bg-color;
+	color: $text-color;
+	border-radius: $border-radius;
+	text-align: $text-align;
 }
 
 * {
@@ -70,7 +83,7 @@ footer {
 	color: $color_1;
 	text-align: center;
 	z-index: 1;
-	padding: 15px 0;
+	padding: $base-padding*2 0;
 	.text-center {
 		color: $color_1;
 		font-family: $font-family_2;
@@ -100,7 +113,7 @@ body {
 	text-shadow: 0 0 2px white;
 	margin-bottom: 0;
 	font-family: $font-family_1;
-	padding-top: 15px;
+	padding-top: $base-padding*4;
 }
 .galeria {
 	background-color: $background-color_4;
@@ -108,14 +121,11 @@ body {
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: repeat(12, 150px);
-	padding: 15px;
+	padding: $base-padding*3;
 	grid-gap: 15px;
 }
 .carta {
-	background-color: $background-color_1;
-	color: $color_1;
-	border-radius: 5px;
-	text-align: center;
+	@include cartaStyles(#212322, #FFC72C, 5px, center);
 	font-family: $font-family_2;
 	p {
 		margin: 5px;
@@ -173,15 +183,6 @@ body {
 .item12 {
 	background-image: url(../img/teriyaki.jpg);
 }
-.index {
-	text-align: center;
-	padding: 20px;
-	font-family: $font-family_3;
-	font-weight: bolder;
-	h1 {
-		font-family: $font-family_1;
-	}
-}
 .row {
 	padding-bottom: 20px;
 }
@@ -192,12 +193,12 @@ body {
 	h1 {
 		text-align: center;
 		font-family: $font-family_1;
-		padding: 20px;
+		padding: $base-padding*4;
 	}
 	h2 {
 		text-align: center;
 		font-family: $font-family_1;
-		padding: 20px;
+		padding: $base-padding*4;
 	}
 }
 .gotodelivery {
@@ -213,7 +214,7 @@ body {
 		text-decoration: none;
 		background-color: $background-color_2;
 		color: $color_3;
-		padding: 25px;
+		padding: $base-padding*5;
 		font-size: larger;
 		border-radius: 10px;
 		margin-top: 20px;
@@ -226,7 +227,7 @@ body {
 }
 .contacto {
 	height: 90vh;
-	padding: 50px;
+	padding: $base-padding*10;
 	text-align: center;
 	font-family: $font-family_1;
 	color: $color_5;
@@ -255,13 +256,13 @@ body {
 		font-family: $font-family_1;
 	}
 	text-align: center;
-	padding: 20px;
+	padding: $base-padding*4;
 	font-family: $font-family_2;
 }
 .deliverybot {
-	padding: 20px;
+	padding: $base-padding*4;
 	a {
-		padding: 15px;
+		padding: $base-padding*3;
 	}
 }
 #imgdelivery {
@@ -279,7 +280,7 @@ body {
 	}
 	.contacto {
 		height: fit-content;
-		padding: 10px;
+		padding: $base-padding*2;
 		font-size: smaller;
 	}
 }
@@ -335,6 +336,50 @@ body {
 }
 @media only screen and (min-width: 992px) {
 	.delivery {
-		padding: 60px;
+		padding: $base-padding*12;
 	}
+}
+
+.background-container {
+    position: relative;
+    height: 100vh; /* 100% of the viewport height */
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+	opacity: 80%;
+}
+
+#image1 {
+    background-image: url(./img/imgp1.jpg);
+}
+
+#image2 {
+    background-image: url(./img/imgp2.jpg);
+}
+
+.indexmain{
+	h1{
+		z-index: 1;
+	}
+}
+
+.index{
+    text-align: center;
+    padding: $base-padding*4;
+    font-family: Nexa;
+    font-weight: bolder;
+}
+
+.index h3{
+    font-family: Stinger;
+}
+
+.row{
+    padding-bottom: 20px;
 }
