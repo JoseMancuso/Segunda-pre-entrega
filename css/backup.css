@@ -1,128 +1,88 @@
-/* Paleta de colores de la marca:
-Color principal: #FFC72C (Amarillo)
-Color secundario: #212322 (Negro)
-Colores alternativos:
-#ECB3CB (Rosa)
-#5E8AB4 (Azul)
-#FA4616 (Rojo)
-*/
-
 @font-face {
-    font-family: Stinger; 
-    src: url(../fonts/StingerFitTrial-Bold.ttf)
+    font-family: Stinger;
+    src: url(../fonts/StingerFitTrial-Bold.ttf);
 }
-
 @font-face {
     font-family: Nexa;
-    src: url(../fonts/Nexa\ Light.otf)
+    src: url(../fonts/Nexa\ Light.otf);
 }
-
 @font-face {
     font-family: NexaBold;
     src: url(../fonts/Nexa\ Bold.otf);
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-
-/* -- Estilos del header -- */
-
 
 header {
     background-color: #212322;
     font-family: Stinger;
     font-size: larger;
 }
-
-.nav-link{
-    color: #FFC72C;
+.nav-link {
+    color: #ffc72c;
 }
-
-.nav-link:hover{
-    color:white;
+.nav-link:hover {
+    color: white;
 }
-
-.navbar-toggler-icon{
-    background-color: #FFC72C;
+.navbar-toggler-icon {
+    background-color: #ffc72c;
 }
-
-#delivery{
-    background-color: #FFC72C;
+#delivery {
+    background-color: #ffc72c;
     margin: 0px;
     border-radius: 5px;
 }
-
-#delivery a{
+#delivery a {
     color: #212322;
 }
-
-#delivery a:hover{
+#delivery a:hover {
     background-color: white;
     border-radius: 5px;
 }
-
-
-/*  -- Estilos del footer -- */
-
-
-footer{
-    
+footer {
     width: 100%;
     background-color: #212322;
-    color: #FFC72C;
+    color: #ffc72c;
     text-align: center;
     z-index: 1;
-    padding: 15px 0;
+    padding: 10px 0;
 }
-
-footer .text-center{
-    color: #FFC72C;
+footer .text-center {
+    color: #ffc72c;
     font-family: NexaBold;
     font-size: larger;
-    
 }
-
-.btn{
-    background-color: #FFC72C;
-    border-color: #FFC72C;
+.btn {
+    background-color: #ffc72c;
+    border-color: #ffc72c;
     color: #212322;
 }
-
-.btn a{
+.btn a {
     color: #212322;
 }
-
-.btn:hover{
+.btn:hover {
     background-color: white;
     color: #212322;
 }
-
-
-
-/* -- Estilos de empanadas.html -- */
-
-
-body{
-    background-color: #ECB3CB;
+body {
+    background-color: #ecb3cb;
 }
-
-#nuestros-sabores{
-    background-color: #ECB3CB;
+#nuestros-sabores {
+    background-color: #ecb3cb;
     text-align: center;
     color: black;
     font-size: 35px;
     text-shadow: 0 0 2px white;
     margin-bottom: 0;
     font-family: Stinger;
-    padding-top: 15px;
+    padding-top: 20px;
 }
-
-.galeria{
-    background-color: #ECB3CB;
+.galeria {
+    background-color: #ecb3cb;
     height: auto;
     display: grid;
     grid-template-columns: 1fr;
@@ -130,210 +90,100 @@ body{
     padding: 15px;
     grid-gap: 15px;
 }
-
-.carta{
+.carta {
     background-color: #212322;
-    color: #FFC72C;
+    color: #ffc72c;
     border-radius: 5px;
     text-align: center;
     font-family: NexaBold;
 }
-
-.carta p{
-    margin: 5px;
+.carta a{
+    text-decoration: none;
+    color: #ffc72c;
 }
-
-.carta h4{
-    margin: 5px;
+.carta a:hover{
+    color: white;
 }
-
-.item{
+.item {
     border: 3px solid #212322;
     background-size: cover;
     background-position: center;
     border-radius: 5px;
-    height: 90%;
-<<<<<<< HEAD
-    filter: grayscale();
-=======
+    height: 85%;
     filter: grayscale(100%);
->>>>>>> efed8c1fe670188ffd6868ad00510c8dd659dcff
     transition: all 0.9s;
 }
-
-.item:hover{
+.item:hover {
     transform: scale(1.04);
     filter: grayscale(0%);
 }
-
-.item1{
+.item1 {
     background-image: url(../img/berenjena.jpg);
 }
-
-.item2{
+.item2 {
     background-image: url(../img/bondio.jpg);
 }
-
-.item3{
+.item3 {
     background-image: url(../img/calabaza.jpg);
 }
-
-.item4{
+.item4 {
     background-image: url(../img/caprese.jpg);
 }
-
-.item5{
+.item5 {
     background-image: url(../img/carnemalbec.jpg);
 }
-
-.item6{
+.item6 {
     background-image: url(../img/carnemorron.jpg);
 }
-
-.item7{
+.item7 {
     background-image: url(../img/humita.jpg);
 }
-
-.item8{
+.item8 {
     background-image: url(../img/jamonqueso.jpg);
 }
-
-.item9{
+.item9 {
     background-image: url(../img/pirok.jpg);
 }
-
-.item10{
+.item10 {
     background-image: url(../img/polloverderoque.jpg);
 }
-
-.item11{
+.item11 {
     background-image: url(../img/roquecebo.jpg);
 }
-
-.item12{
+.item12 {
     background-image: url(../img/teriyaki.jpg);
 }
-
-
-@media only screen and (max-width: 767px){
-    .item{
-        filter: none;
-    }
-}
-
-@media only screen and (min-width: 200px){
-    h4{
-        font-size: small;
-    }
-
-    #myCarousel{
-        height: 20vh;
-    }
-}
-
-
-@media only screen and (min-width: 480px){
-    .galeria{
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(6, 150px);
-    }
-
-    #myCarousel{
-        height: 35vh;
-    }
-}
-
-@media only screen and (min-width: 768px){
-    .galeria{
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: repeat(4, 230px);
-    }
-
-    #myCarousel{
-        height: 45vh;
-    }
-}
-
-@media only screen and (min-width: 1200px){
-    .galeria{
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: repeat(3, 350px);
-    }
-    
-    h4{
-        font-size: large;
-    }
-
-    #myCarousel{
-        height: 65vh;
-    }
-}
-
-@media only screen and (min-width: 1600px){
-    .galeria{
-        grid-template-columns: 2fr 2fr 2fr 2fr;
-        grid-template-rows: repeat(3, 500px);
-    }
-    
-    h4{
-        font-size: larger;
-    }
-
-    #myCarousel{
-        height: 60vh;
-    }
-}
-
-
-
-/* Estilos del index.html */
-
-
-.index{
-    text-align: center;
-    padding: 20px;
-    font-family: Nexa;
-    font-weight: bolder;
-}
-
-.index h3{
-    font-family: Stinger;
-}
-
-.row{
+.row {
     padding-bottom: 20px;
 }
-
-
-    /* Estilos "nietos.html" */
-
-.mainnietos{
-    background-color: #ECB3CB;
+.mainnietos {
+    background-color: #ecb3cb;
     background-position: center;
     height: 100vh;
 }
-
-.mainnietos h1{
+.mainnietos h1 {
     text-align: center;
     font-family: Stinger;
     padding: 20px;
 }
-
-.gotodelivery{
+.mainnietos h2 {
+    text-align: center;
+    font-family: Stinger;
+    padding: 20px;
+}
+.gotodelivery {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
-.gotodelivery h2{
+.gotodelivery h2 {
     text-align: center;
     font-family: Stinger;
 }
-
-.gotodelivery a{
+.gotodelivery a {
     text-decoration: none;
-    background-color: #FFC72C;
+    background-color: #ffc72c;
     color: #212322;
     padding: 25px;
     font-size: larger;
@@ -341,87 +191,288 @@ body{
     margin-top: 20px;
     font-family: NexaBold;
     display: inline-block;
-    
 }
-
-.carousel-inner{
+.carousel-inner {
     height: 70vh;
 }
-
-    /* Fin de estilos "nietos.html" */   
-
-
-    /* Estilos de "contacto.html" */   
-
-.contacto{
+.contacto {
     height: 90vh;
     padding: 50px;
     text-align: center;
     font-family: Stinger;
-    color: #FA4616;
+    color: #fa4616;
 }
-
-.contacto form{
+.contacto form {
     font-family: NexaBold;
 }
-
-#contactbtn, #contactbtncv{
+#contactbtn {
     background-color: #212322;
-    color: #FFC72C;
+    color: #ffc72c;
 }
-
-#contactbtn:hover, #contactbtncv:hover{
+#contactbtn:hover {
     background-color: white;
     color: #212322;
 }
-
-@media only screen and (max-width: 767px){
-    .contacto{
-        height: fit-content;
-        padding: 10px;
-        font-size: smaller;
-    }
+#contactbtncv {
+    background-color: #212322;
+    color: #ffc72c;
 }
-
-    /* Fin de estilos "contacto.html" */   
-
-
-    /* Estilos "delivery.html" */
-
-.delivery h1{
-    font-family: Stinger;
+#contactbtncv:hover {
+    background-color: white;
+    color: #212322;
 }
-
-.delivery{
+.delivery {
     text-align: center;
     padding: 20px;
     font-family: NexaBold;
 }
-
-.deliverybot{
+.delivery h1 {
+    font-family: Stinger;
+}
+.deliverybot {
     padding: 20px;
 }
-
-.deliverybot a{
+.deliverybot a {
     padding: 15px;
 }
-
-#imgdelivery{
+#imgdelivery {
     width: 100%;
 }
-
-#deliverylogo{
+#deliverylogo {
     width: 100%;
 }
-
-#leftcol{
+#leftcol {
     margin-bottom: 37px;
 }
+@media only screen and (max-width: 767px) {
+    .item {
+	filter: none;
+    }
+    .contacto {
+	height: fit-content;
+	padding: 10px;
+	font-size: smaller;
+    }
+}
+@media only screen and (min-width: 200px) {
+    h4 {
+	font-size: small;
+    }
+    #myCarousel {
+	height: 20vh;
+    }
+}
+@media only screen and (min-width: 480px) {
+    .galeria {
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: repeat(6, 150px);
+    }
+    #myCarousel {
+	height: 35vh;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .galeria {
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: repeat(4, 230px);
+    }
+    #myCarousel {
+	height: 45vh;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .galeria {
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: repeat(3, 350px);
+    }
+    h4 {
+	font-size: large;
+    }
+    #myCarousel {
+	height: 65vh;
+    }
+}
+@media only screen and (min-width: 1600px) {
+    .galeria {
+	grid-template-columns: 2fr 2fr 2fr 2fr;
+	grid-template-rows: repeat(3, 500px);
+    }
+    h4 {
+	font-size: larger;
+    }
+    #myCarousel {
+	height: 60vh;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .delivery {
+	padding: 60px;
+    }
+}
+.background-container {
+    position: relative;
+    height: 100vh;
+}
+.background-image {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 80%;
+}
+#image1 {
+    background-image: url(./img/imgp1.jpg);
+}
+#image2 {
+    background-image: url(./img/imgp2.jpg);
+}
+.indexmain h1 {
+    z-index: 1;
+}
+.indexa {
+    background: url(../img/imgp7.jpg) left top no-repeat;
+    background: url(../img/imgp2.jpg) right top no-repeat, url(../img/imgp7.jpg) left top no-repeat;
+    background-size: 50% 100%, 50% 100%;
+    opacity: 75%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    font-family: Nexa;
+    font-weight: bolder;
+    justify-content: center;
+}
 
-@media only screen and (min-width: 992px){
-    .delivery{
-        padding: 60px;
+.indexa h1{
+    margin: 70px;
+    font-size: 60px;
+    color: #ffc72c;
+    font-weight: bolder;
+    font-family: Stinger;
+    text-shadow: 5px 5px 10px #212322;
+    transition: transform 0.5s ease-in-out;
+}
+
+.indexa h1:hover{
+    transition: transform 0.5s ease-in-out;
+    transform: scale(1.10);
+}
+
+.indexb{
+    height: 40vh;
+    background-color: #ecb3cb;
+    font-family: Stinger;
+    padding: 70px;
+    text-align: center;
+}
+
+
+.indexb p{
+    font-size: larger;
+    padding: 10px;
+}
+
+.indexc{
+    background: url(../img/imgp1.jpg) left top no-repeat;
+    background: url(../img/imgp3.jpg) right top no-repeat, url(../img/imgp1.jpg) left top no-repeat;
+    background-size: 50% 100%, 50% 100%;
+    opacity: 75%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    font-family: Nexa;
+    font-weight: bolder;
+    justify-content: center;
+}
+
+.indexc h2{
+    margin: 70px;
+    font-size: 60px;
+    color: #ffc72c;
+    font-weight: bolder;
+    font-family: Stinger;
+    text-shadow: 5px 5px 10px #212322;
+    transition: transform 0.5s ease-in-out;
+}
+
+.indexc h2:hover{
+    transition: transform 0.5s ease-in-out;
+    transform: scale(1.10);
+}
+
+.indexd{
+    height: 40vh;
+    background-color: #ecb3cb;
+    font-family: Stinger;
+    padding: 100px;
+    text-align: center;
+}
+
+.indexd a{
+    text-decoration: none;
+    background-color: #ffc72c;
+    color: #212322;
+    padding: 25px;
+    font-size: larger;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-family: NexaBold;
+    display: inline-block;
+}
+
+.indexd a:hover{
+    background-color: #212322;
+    color: #ffc72c;
+}
+
+@media only screen and (max-width: 480px){
+    .indexa h1{
+        font-size: 40px;
+    }
+    .indexc h2{
+        font-size: 40px;
     }
 }
 
-/* Fin estilos "delivery.html" */
+@media only screen and (max-width: 768px){
+    .indexb{
+        padding: 15px;
+        font-size: 12px;
+    }
+    .indexd{
+        padding: 35px;
+    }
+}
+
+@media only screen and (max-width: 420px){
+    .indexb{
+        padding: 5px;
+        font-size: 10px;
+    }
+
+    .indexd a{
+        padding-bottom: 15px;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    .indexa{
+        background: url(../img/imgp1.jpg);
+        background-size: cover;
+    }
+    .indexb{
+        padding: 20px;
+    }
+    .indexc{
+        background: url(../img/imgp2.jpg);
+        background-size: cover;
+    }
+    .indexd{
+        padding: 35px;
+    }
+}
