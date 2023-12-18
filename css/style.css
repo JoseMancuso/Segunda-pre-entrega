@@ -1,6 +1,7 @@
 /* Colores */
 /* Fuentes */
 /* Colores background */
+/* Color bordes texto */
 @font-face {
   font-family: Stinger;
   src: url(../fonts/StingerFitTrial-Bold.ttf);
@@ -12,6 +13,56 @@
 @font-face {
   font-family: NexaBold;
   src: url(../fonts/Nexa\ Bold.otf);
+}
+@keyframes slideInUp {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+@keyframes slideInSlow {
+  from {
+    transform: translateY(-10%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+@keyframes slideInSide {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+@keyframes vibrate {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  40% {
+    transform: translateX(2px) rotate(1deg);
+  }
+  60% {
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  80% {
+    transform: translateX(2px) rotate(1deg);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 * {
   margin: 0;
@@ -83,12 +134,14 @@ body {
 #nuestros-sabores {
   background-color: #ecb3cb;
   text-align: center;
-  color: black;
+  color: #212322;
   font-size: 35px;
   text-shadow: 0 0 2px white;
   margin-bottom: 0;
   font-family: Stinger;
   padding-top: 20px;
+  position: relative;
+  animation: slideInSide 1s ease-in-out;
 }
 
 .galeria {
@@ -191,6 +244,8 @@ body {
   text-align: center;
   font-family: Stinger;
   padding: 20px;
+  position: relative;
+  animation: slideInSide 1s ease-in-out;
 }
 .mainnietos h2 {
   text-align: center;
@@ -204,18 +259,14 @@ body {
   justify-content: center;
   align-items: center;
 }
-.gotodelivery h2 {
-  text-align: center;
-  font-family: Stinger;
-}
 .gotodelivery a {
   text-decoration: none;
   background-color: #ffc72c;
   color: #212322;
-  padding: 25px;
+  padding: 20px;
   font-size: larger;
   border-radius: 10px;
-  margin-top: 20px;
+  margin-top: 55px;
   font-family: NexaBold;
   display: inline-block;
 }
@@ -225,11 +276,13 @@ body {
 }
 
 .contacto {
+  background: url(../img/imgp2.jpg);
+  background-size: cover;
   height: 90vh;
   padding: 50px;
   text-align: center;
   font-family: Stinger;
-  color: #fa4616;
+  color: #ffc72c;
 }
 .contacto form {
   font-family: NexaBold;
@@ -254,12 +307,24 @@ body {
 }
 
 .delivery {
+  background-color: rgba(255, 199, 44, 0.7607843137);
+  color: #212322;
   text-align: center;
   padding: 20px;
   font-family: NexaBold;
 }
+.delivery .container-fluid {
+  position: relative;
+  animation: slideInSide 1s ease-in-out;
+}
 .delivery h1 {
   font-family: Stinger;
+}
+
+#deliverylogo {
+  position: relative;
+  animation: slideInSlow 2.5s ease-in-out;
+  width: 100%;
 }
 
 .deliverybot {
@@ -270,10 +335,6 @@ body {
 }
 
 #imgdelivery {
-  width: 100%;
-}
-
-#deliverylogo {
   width: 100%;
 }
 
@@ -330,6 +391,8 @@ body {
   font-family: Stinger;
   text-shadow: 5px 5px 10px #212322;
   transition: transform 0.5s ease-in-out;
+  position: relative;
+  animation: slideInUp 1s ease-in-out;
 }
 .indexa h1:hover {
   transition: transform 0.5s ease-in-out;
@@ -397,6 +460,22 @@ body {
 .indexd a:hover {
   background-color: #212322;
   color: #ffc72c;
+  animation: vibrate 0.3s ease-in-out infinite;
+}
+
+.serparte h1 {
+  position: relative;
+  animation: slideInSide 1s ease-in-out;
+}
+
+h2 {
+  position: relative;
+  animation: slideInSide 1s ease-in-out;
+}
+
+.was-validated {
+  position: relative;
+  animation: slideInSlow 7s ease-in-out;
 }
 
 @media only screen and (max-width: 767px) {

@@ -1,24 +1,18 @@
 /* Colores */
-
 $color_1: #ffc72c;
 $color_2: white;
 $color_3: #212322;
-$color_4: black;
-$color_5: #fa4616;
-
 /* Fuentes */
-
 $font-family_1: Stinger;
 $font-family_2: NexaBold;
 $font-family_3: Nexa;
-
 /* Colores background */
-
 $background-color_1: #212322;
 $background-color_2: #ffc72c;
 $background-color_3: white;
 $background-color_4: #ecb3cb;
-
+$background-color_5: #ffc72cc2;
+/* Color bordes texto */
 $border-color_1: #ffc72c;
 
 @font-face {
@@ -32,6 +26,56 @@ $border-color_1: #ffc72c;
 @font-face {
 	font-family: NexaBold;
 	src: url(../fonts/Nexa\ Bold.otf);
+}
+@keyframes slideInUp {
+	from {
+		transform: translateY(-100%);
+		opacity: 0;
+	}
+	to {
+		transform: translate(0);
+		opacity: 1;
+	}
+}
+@keyframes slideInSlow {
+	from {
+		transform: translateY(-10%);
+		opacity: 0;
+	}
+	to {
+		transform: translate(0);
+		opacity: 1;
+	}
+}
+@keyframes slideInSide {
+	from {
+		transform: translateX(-100%);
+		opacity: 0;
+	}
+	to {
+		transform: translate(0);
+		opacity: 1;
+	}
+}
+@keyframes vibrate {
+	0% {
+		transform: translateX(0);
+	}
+	20% {
+		transform: translateX(-2px) rotate(-1deg);
+	}
+	40% {
+		transform: translateX(2px) rotate(1deg);
+	}
+	60% {
+		transform: translateX(-2px) rotate(-1deg);
+	}
+	80% {
+		transform: translateX(2px) rotate(1deg);
+	}
+	100% {
+		transform: translateX(0);
+	}
 }
 * {
 	margin: 0;
@@ -95,12 +139,14 @@ body {
 #nuestros-sabores {
 	background-color: $background-color_4;
 	text-align: center;
-	color: $color_4;
+	color: $color_3;
 	font-size: 35px;
 	text-shadow: 0 0 2px white;
 	margin-bottom: 0;
 	font-family: $font-family_1;
 	padding-top: 20px;
+	position: relative;
+	animation: slideInSide 1s ease-in-out;
 }
 .galeria {
 	background-color: $background-color_4;
@@ -185,6 +231,8 @@ body {
 		text-align: center;
 		font-family: $font-family_1;
 		padding: 20px;
+		position: relative;
+		animation: slideInSide 1s ease-in-out;
 	}
 	h2 {
 		text-align: center;
@@ -197,18 +245,14 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	h2 {
-		text-align: center;
-		font-family: $font-family_1;
-	}
 	a {
 		text-decoration: none;
 		background-color: $background-color_2;
 		color: $color_3;
-		padding: 25px;
+		padding: 20px;
 		font-size: larger;
 		border-radius: 10px;
-		margin-top: 20px;
+		margin-top: 55px;
 		font-family: $font-family_2;
 		display: inline-block;
 	}
@@ -217,11 +261,13 @@ body {
 	height: 70vh;
 }
 .contacto {
+	background: url(../img/imgp2.jpg);
+	background-size: cover;
 	height: 90vh;
 	padding: 50px;
 	text-align: center;
 	font-family: $font-family_1;
-	color: $color_5;
+	color: $color_1;
 	form {
 		font-family: $font-family_2;
 	}
@@ -243,12 +289,23 @@ body {
 	}
 }
 .delivery {
+	background-color: $background-color_5;
+	color: $color_3;
 	text-align: center;
 	padding: 20px;
 	font-family: $font-family_2;
+	.container-fluid {
+		position: relative;
+		animation: slideInSide 1s ease-in-out;
+	}
 	h1 {
 		font-family: $font-family_1;
 	}
+}
+#deliverylogo {
+	position: relative;
+	animation: slideInSlow 2.5s ease-in-out;
+	width: 100%;
 }
 .deliverybot {
 	padding: 20px;
@@ -257,9 +314,6 @@ body {
 	}
 }
 #imgdelivery {
-	width: 100%;
-}
-#deliverylogo {
 	width: 100%;
 }
 #leftcol {
@@ -310,9 +364,11 @@ body {
 		font-family: $font-family_1;
 		text-shadow: 5px 5px 10px #212322;
 		transition: transform 0.5s ease-in-out;
+		position: relative;
+		animation: slideInUp 1s ease-in-out;
 		&:hover {
 			transition: transform 0.5s ease-in-out;
-			transform: scale(1.10);
+			transform: scale(1.1);
 		}
 	}
 }
@@ -350,7 +406,7 @@ body {
 		transition: transform 0.5s ease-in-out;
 		&:hover {
 			transition: transform 0.5s ease-in-out;
-			transform: scale(1.10);
+			transform: scale(1.1);
 		}
 	}
 }
@@ -373,8 +429,23 @@ body {
 		&:hover {
 			background-color: $background-color_1;
 			color: $color_1;
+			animation: vibrate 0.3s ease-in-out infinite;
 		}
 	}
+}
+.serparte {
+	h1 {
+		position: relative;
+		animation: slideInSide 1s ease-in-out;
+	}
+}
+h2 {
+	position: relative;
+	animation: slideInSide 1s ease-in-out;
+}
+.was-validated {
+	position: relative;
+	animation: slideInSlow 7s ease-in-out;
 }
 @media only screen and (max-width: 767px) {
 	.item {
@@ -489,9 +560,8 @@ body {
 		padding: 35px;
 	}
 }
-
-@media only screen and (min-width: 576px) and (max-width: 610px){
-	.nav-item{
+@media only screen and (min-width: 576px) and (max-width: 610px) {
+	.nav-item {
 		font-size: medium;
 	}
 }
