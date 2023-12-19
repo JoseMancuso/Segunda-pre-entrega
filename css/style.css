@@ -3,592 +3,596 @@
 /* Colores background */
 /* Color bordes texto */
 @font-face {
-  font-family: Stinger;
-  src: url(../fonts/StingerFitTrial-Bold.ttf);
+    font-family: Stinger;
+    src: url(../fonts/StingerFitTrial-Bold.ttf);
 }
 @font-face {
-  font-family: Nexa;
-  src: url(../fonts/Nexa\ Light.otf);
+    font-family: Nexa;
+    src: url(../fonts/Nexa\ Light.otf);
 }
 @font-face {
-  font-family: NexaBold;
-  src: url(../fonts/Nexa\ Bold.otf);
+    font-family: NexaBold;
+    src: url(../fonts/Nexa\ Bold.otf);
 }
 @keyframes slideInUp {
-  from {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-  to {
-    transform: translate(0);
-    opacity: 1;
-  }
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translate(0);
+        opacity: 1;
+    }
 }
 @keyframes slideInSlow {
-  from {
-    transform: translateY(-10%);
-    opacity: 0;
-  }
-  to {
-    transform: translate(0);
-    opacity: 1;
-  }
+    from {
+        transform: translateY(-10%);
+        opacity: 0;
+    }
+    to {
+        transform: translate(0);
+        opacity: 1;
+    }
 }
 @keyframes slideInSide {
-  from {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  to {
-    transform: translate(0);
-    opacity: 1;
-  }
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translate(0);
+        opacity: 1;
+    }
 }
 @keyframes vibrate {
-  0% {
-    transform: translateX(0);
-  }
-  20% {
-    transform: translateX(-2px) rotate(-1deg);
-  }
-  40% {
-    transform: translateX(2px) rotate(1deg);
-  }
-  60% {
-    transform: translateX(-2px) rotate(-1deg);
-  }
-  80% {
-    transform: translateX(2px) rotate(1deg);
-  }
-  100% {
-    transform: translateX(0);
-  }
+    0% {
+        transform: translateX(0);
+    }
+    20% {
+        transform: translateX(-2px) rotate(-1deg);
+    }
+    40% {
+        transform: translateX(2px) rotate(1deg);
+    }
+    60% {
+        transform: translateX(-2px) rotate(-1deg);
+    }
+    80% {
+        transform: translateX(2px) rotate(1deg);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 header {
-  background-color: #212322;
-  font-family: Stinger;
-  font-size: larger;
+    background-color: #212322;
+    font-family: Stinger;
+    font-size: larger;
 }
 
 .nav-link {
-  color: #ffc72c;
+    color: #ffc72c;
 }
 .nav-link:hover {
-  color: white;
+    color: white;
 }
 
 .navbar-toggler-icon {
-  background-color: #ffc72c;
+    background-color: #ffc72c;
 }
 
 #delivery {
-  background-color: #ffc72c;
-  margin: 0px;
-  border-radius: 5px;
+    background-color: #ffc72c;
+    margin: 0px;
+    border-radius: 5px;
 }
 #delivery a {
-  color: #212322;
+    color: #212322;
 }
 #delivery a:hover {
-  background-color: white;
-  border-radius: 5px;
+    background-color: white;
+    border-radius: 5px;
 }
 
 footer {
-  width: 100%;
-  background-color: #212322;
-  color: #ffc72c;
-  text-align: center;
-  z-index: 1;
-  padding: 10px 0;
+    width: 100%;
+    background-color: #212322;
+    color: #ffc72c;
+    text-align: center;
+    z-index: 1;
+    padding: 10px 0;
 }
 footer .text-center {
-  color: #ffc72c;
-  font-family: NexaBold;
-  font-size: larger;
+    color: #ffc72c;
+    font-family: NexaBold;
+    font-size: larger;
 }
 
 .btn {
-  background-color: #ffc72c;
-  border-color: #ffc72c;
-  color: #212322;
+    background-color: #ffc72c;
+    border-color: #ffc72c;
+    color: #212322;
 }
 .btn a {
-  color: #212322;
+    color: #212322;
 }
 .btn:hover {
-  background-color: white;
-  color: #212322;
+    background-color: white;
+    color: #212322;
 }
 
 body {
-  background-color: #ecb3cb;
+    background-color: #ffc72c;
 }
 
 #nuestros-sabores {
-  background-color: #ecb3cb;
-  text-align: center;
-  color: #212322;
-  font-size: 35px;
-  text-shadow: 0 0 2px white;
-  margin-bottom: 0;
-  font-family: Stinger;
-  padding-top: 20px;
-  position: relative;
-  animation: slideInSide 1s ease-in-out;
+    background-color: #ffc72c;
+    text-align: center;
+    color: #212322;
+    font-size: 35px;
+    text-shadow: 0 0 2px white;
+    margin-bottom: 0;
+    font-family: Stinger;
+    padding-top: 20px;
+    position: relative;
+    animation: slideInSide 1s ease-in-out;
 }
 
 .galeria {
-  background-color: #ecb3cb;
-  height: auto;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(12, 150px);
-  padding: 15px;
-  grid-gap: 15px;
+    background-color: #ffc72ccc;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, 150px);
+    padding: 15px;
+    grid-gap: 15px;
+	margin-bottom: 20px;
 }
 
 .carta {
-  background-color: #212322;
-  color: #ffc72c;
-  border-radius: 5px;
-  text-align: center;
-  font-family: NexaBold;
+    background-color: #212322;
+    color: #ffc72c;
+    border-radius: 5px;
+    text-align: center;
+    font-family: NexaBold;
 }
 .carta a {
-  text-decoration: none;
-  color: #ffc72c;
+    text-decoration: none;
+    color: #ffc72c;
 }
 .carta a:hover {
-  color: white;
+    color: white;
 }
 
 .item {
-  border: 3px solid #212322;
-  background-size: cover;
-  background-position: center;
-  border-radius: 5px;
-  height: 85%;
-  filter: grayscale(100%);
-  transition: all 0.9s;
+    border: 3px solid #212322;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    height: 85%;
+    filter: grayscale(100%);
+    transition: all 0.9s;
 }
 .item:hover {
-  transform: scale(1.04);
-  filter: grayscale(0%);
+    transform: scale(1.04);
+    filter: grayscale(0%);
 }
 
 .item1 {
-  background-image: url(../img/berenjena.jpg);
+    background-image: url(../img/berenjena.jpg);
 }
 
 .item2 {
-  background-image: url(../img/bondio.jpg);
+    background-image: url(../img/bondio.jpg);
 }
 
 .item3 {
-  background-image: url(../img/calabaza.jpg);
+    background-image: url(../img/calabaza.jpg);
 }
 
 .item4 {
-  background-image: url(../img/caprese.jpg);
+    background-image: url(../img/caprese.jpg);
 }
 
 .item5 {
-  background-image: url(../img/carnemalbec.jpg);
+    background-image: url(../img/carnemalbec.jpg);
 }
 
 .item6 {
-  background-image: url(../img/carnemorron.jpg);
+    background-image: url(../img/carnemorron.jpg);
 }
 
 .item7 {
-  background-image: url(../img/humita.jpg);
+    background-image: url(../img/humita.jpg);
 }
 
 .item8 {
-  background-image: url(../img/jamonqueso.jpg);
+    background-image: url(../img/jamonqueso.jpg);
 }
 
 .item9 {
-  background-image: url(../img/pirok.jpg);
+    background-image: url(../img/pirok.jpg);
 }
 
 .item10 {
-  background-image: url(../img/polloverderoque.jpg);
+    background-image: url(../img/polloverderoque.jpg);
 }
 
 .item11 {
-  background-image: url(../img/roquecebo.jpg);
+    background-image: url(../img/roquecebo.jpg);
 }
 
 .item12 {
-  background-image: url(../img/teriyaki.jpg);
+    background-image: url(../img/teriyaki.jpg);
 }
 
 .row {
-  padding-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 .mainnietos {
-  background-color: #ecb3cb;
-  background-position: center;
-  height: 100vh;
+    background-color: #ffc72ccc;
+    background-position: center;
+    height: 100vh;
+
 }
 .mainnietos h1 {
-  text-align: center;
-  font-family: Stinger;
-  padding: 20px;
-  position: relative;
-  animation: slideInSide 1s ease-in-out;
-}
-.mainnietos h2 {
-  text-align: center;
-  font-family: Stinger;
-  padding: 20px;
+    text-align: center;
+    font-family: Stinger;
+    padding: 15px;
+    padding-bottom: 5px;
+    position: relative;
+    animation: slideInSide 1s ease-in-out;
 }
 
 .gotodelivery {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .gotodelivery a {
-  text-decoration: none;
-  background-color: #ffc72c;
-  color: #212322;
-  padding: 20px;
-  font-size: larger;
-  border-radius: 10px;
-  margin-top: 55px;
-  font-family: NexaBold;
-  display: inline-block;
+    text-decoration: none;
+    background-color: #212322;
+    color: #ffc72c;
+    padding: 20px;
+    font-size: larger;
+    border-radius: 10px;
+    margin-top: 100px;
+    font-family: NexaBold;
+    display: inline-block;
 }
 
 .carousel-inner {
-  height: 70vh;
+    height: 70vh;
 }
 
 .contacto {
-  background: url(../img/imgp2.jpg);
-  background-size: cover;
-  height: 90vh;
-  padding: 50px;
-  text-align: center;
-  font-family: Stinger;
-  color: #ffc72c;
+    background: url(../img/imgp2.jpg);
+    background-size: cover;
+    height: 90vh;
+    padding: 50px;
+    text-align: center;
+    font-family: Stinger;
+    color: #ffc72c;
 }
 .contacto form {
-  font-family: NexaBold;
+    font-family: NexaBold;
 }
 
 #contactbtn {
-  background-color: #212322;
-  color: #ffc72c;
+    background-color: #212322;
+    color: #ffc72c;
 }
 #contactbtn:hover {
-  background-color: white;
-  color: #212322;
+    background-color: white;
+    color: #212322;
 }
 
 #contactbtncv {
-  background-color: #212322;
-  color: #ffc72c;
+    background-color: #212322;
+    color: #ffc72c;
 }
 #contactbtncv:hover {
-  background-color: white;
-  color: #212322;
+    background-color: white;
+    color: #212322;
 }
 
 .delivery {
-  background-color: rgba(255, 199, 44, 0.7607843137);
-  color: #212322;
-  text-align: center;
-  padding: 20px;
-  font-family: NexaBold;
+    background-color: #ffc72ccc;
+    color: #212322;
+    text-align: center;
+    padding: 20px;
+    font-family: NexaBold;
 }
 .delivery .container-fluid {
-  position: relative;
-  animation: slideInSide 1s ease-in-out;
+    position: relative;
+    animation: slideInSide 1s ease-in-out;
 }
 .delivery h1 {
-  font-family: Stinger;
+    font-family: Stinger;
 }
 
 #deliverylogo {
-  position: relative;
-  animation: slideInSlow 2.5s ease-in-out;
-  width: 100%;
+    position: relative;
+    animation: slideInSlow 2.5s ease-in-out;
+    width: 100%;
 }
 
 .deliverybot {
-  padding: 20px;
+    padding: 20px;
 }
 .deliverybot a {
-  padding: 15px;
+    padding: 15px;
 }
 
 #imgdelivery {
-  width: 100%;
+    width: 100%;
 }
 
 #leftcol {
-  margin-bottom: 37px;
+    margin-bottom: 37px;
 }
 
 .background-container {
-  position: relative;
-  height: 100vh;
+    position: relative;
+    height: 100vh;
 }
 
 .background-image {
-  position: absolute;
-  top: 0;
-  width: 50%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  opacity: 80%;
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 80%;
 }
 
 #image1 {
-  background-image: url(./img/imgp1.jpg);
+    background-image: url(./img/imgp1.jpg);
 }
 
 #image2 {
-  background-image: url(./img/imgp2.jpg);
+    background-image: url(./img/imgp2.jpg);
 }
 
 .indexmain h1 {
-  z-index: 1;
+    z-index: 1;
 }
 
 .indexa {
-  background: url(../img/imgp7.jpg) left top no-repeat;
-  background: url(../img/imgp2.jpg) right top no-repeat, url(../img/imgp7.jpg) left top no-repeat;
-  background-size: 50% 100%, 50% 100%;
-  opacity: 75%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  padding: 20px;
-  font-family: Nexa;
-  font-weight: bolder;
-  justify-content: center;
+    background: url(../img/imgp7.jpg) left top no-repeat;
+    background: url(../img/imgp2.jpg) right top no-repeat, url(../img/imgp7.jpg) left top no-repeat;
+    background-size: 50% 100%, 50% 100%;
+    opacity: 75%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    font-family: Nexa;
+    font-weight: bolder;
+    justify-content: center;
 }
 .indexa h1 {
-  margin: 70px;
-  font-size: 60px;
-  color: #ffc72c;
-  font-weight: bolder;
-  font-family: Stinger;
-  text-shadow: 5px 5px 10px #212322;
-  transition: transform 0.5s ease-in-out;
-  position: relative;
-  animation: slideInUp 1s ease-in-out;
+    margin: 70px;
+    font-size: 60px;
+    color: #ffc72c;
+    font-weight: bolder;
+    font-family: Stinger;
+    text-shadow: 5px 5px 10px #212322;
+    transition: transform 0.5s ease-in-out;
+    position: relative;
+    animation: slideInUp 1s ease-in-out;
 }
 .indexa h1:hover {
-  transition: transform 0.5s ease-in-out;
-  transform: scale(1.1);
+    transition: transform 0.5s ease-in-out;
+    transform: scale(1.1);
 }
 
 .indexb {
-  height: 40vh;
-  background-color: #ecb3cb;
-  font-family: Stinger;
-  padding: 70px;
-  text-align: center;
+    height: 40vh;
+    background-color: #ffc72c;
+    font-family: Stinger;
+    padding: 70px;
+    text-align: center;
 }
 .indexb p {
-  font-size: larger;
-  padding: 10px;
+    font-size: larger;
+    padding: 10px;
 }
 
 .indexc {
-  background: url(../img/imgp1.jpg) left top no-repeat;
-  background: url(../img/imgp3.jpg) right top no-repeat, url(../img/imgp1.jpg) left top no-repeat;
-  background-size: 50% 100%, 50% 100%;
-  opacity: 75%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  padding: 20px;
-  font-family: Nexa;
-  font-weight: bolder;
-  justify-content: center;
+    background: url(../img/imgp1.jpg) left top no-repeat;
+    background: url(../img/imgp3.jpg) right top no-repeat, url(../img/imgp1.jpg) left top no-repeat;
+    background-size: 50% 100%, 50% 100%;
+    opacity: 75%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    font-family: Nexa;
+    font-weight: bolder;
+    justify-content: center;
 }
 .indexc h2 {
-  margin: 70px;
-  font-size: 60px;
-  color: #ffc72c;
-  font-weight: bolder;
-  font-family: Stinger;
-  text-shadow: 5px 5px 10px #212322;
-  transition: transform 0.5s ease-in-out;
+    margin: 70px;
+    font-size: 60px;
+    color: #ffc72c;
+    font-weight: bolder;
+    font-family: Stinger;
+    text-shadow: 5px 5px 10px #212322;
+    transition: transform 0.5s ease-in-out;
 }
 .indexc h2:hover {
-  transition: transform 0.5s ease-in-out;
-  transform: scale(1.1);
+    transition: transform 0.5s ease-in-out;
+    transform: scale(1.1);
 }
 
 .indexd {
-  height: 40vh;
-  background-color: #ecb3cb;
-  font-family: Stinger;
-  padding: 100px;
-  text-align: center;
+    height: 40vh;
+    background-color: #ffc72c;
+    font-family: Stinger;
+    padding: 100px;
+    text-align: center;
 }
 .indexd a {
-  text-decoration: none;
-  background-color: #ffc72c;
-  color: #212322;
-  padding: 25px;
-  font-size: larger;
-  border-radius: 10px;
-  margin-top: 20px;
-  font-family: NexaBold;
-  display: inline-block;
+    text-decoration: none;
+    background-color: #212322;
+    color: #ffc72c;
+    padding: 25px;
+    font-size: larger;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-family: NexaBold;
+    display: inline-block;
 }
 .indexd a:hover {
-  background-color: #212322;
-  color: #ffc72c;
-  animation: vibrate 0.3s ease-in-out infinite;
+    background-color: #212322;
+    color: #ffc72c;
+    animation: vibrate 0.3s ease-in-out infinite;
 }
 
 .serparte h1 {
-  position: relative;
-  animation: slideInSide 1s ease-in-out;
+    position: relative;
+    animation: slideInSide 1s ease-in-out;
 }
 
 h2 {
-  position: relative;
-  animation: slideInSide 1s ease-in-out;
+    position: relative;
+    animation: slideInSide 1s ease-in-out;
 }
 
 .was-validated {
-  position: relative;
-  animation: slideInSlow 7s ease-in-out;
+    position: relative;
+    animation: slideInSlow 1s ease-in-out;
 }
 
 @media only screen and (max-width: 767px) {
-  .item {
-    filter: none;
-  }
-  .contacto {
-    height: fit-content;
-    padding: 10px;
-    font-size: smaller;
-  }
+    .item {
+        filter: none;
+    }
+    .contacto {
+        height: fit-content;
+        padding: 10px;
+        font-size: smaller;
+    }
 }
 @media only screen and (min-width: 200px) {
-  h4 {
-    font-size: small;
-  }
-  #myCarousel {
-    height: 20vh;
-  }
+    h4 {
+        font-size: small;
+    }
+    #myCarousel {
+        height: 20vh;
+    }
 }
 @media only screen and (min-width: 480px) {
-  .galeria {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(6, 150px);
-  }
-  #myCarousel {
-    height: 35vh;
-  }
+    .galeria {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(6, 150px);
+    }
+    #myCarousel {
+        height: 35vh;
+    }
 }
 @media only screen and (min-width: 768px) {
-  .galeria {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(4, 230px);
-  }
-  #myCarousel {
-    height: 45vh;
-  }
+    .galeria {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(4, 230px);
+    }
+    #myCarousel {
+        height: 45vh;
+    }
 }
 @media only screen and (min-width: 1200px) {
-  .galeria {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: repeat(3, 350px);
-  }
-  h4 {
-    font-size: large;
-  }
-  #myCarousel {
-    height: 65vh;
-  }
+    .galeria {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: repeat(3, 350px);
+    }
+    h4 {
+        font-size: large;
+    }
+    #myCarousel {
+        height: 65vh;
+    }
 }
 @media only screen and (min-width: 1600px) {
-  .galeria {
-    grid-template-columns: 2fr 2fr 2fr 2fr;
-    grid-template-rows: repeat(3, 500px);
-  }
-  h4 {
-    font-size: larger;
-  }
-  #myCarousel {
-    height: 60vh;
-  }
+    .galeria {
+        grid-template-columns: 2fr 2fr 2fr 2fr;
+        grid-template-rows: repeat(3, 500px);
+    }
+    h4 {
+        font-size: larger;
+    }
+    #myCarousel {
+        height: 60vh;
+    }
 }
 @media only screen and (min-width: 992px) {
-  .delivery {
-    padding: 60px;
-  }
+    .delivery {
+        padding: 60px;
+    }
 }
 @media only screen and (max-width: 480px) {
-  .indexa h1 {
-    font-size: 40px;
-  }
-  .indexc h2 {
-    font-size: 40px;
-  }
+    .indexa h1 {
+        font-size: 40px;
+    }
+    .indexc h2 {
+        font-size: 40px;
+    }
 }
 @media only screen and (max-width: 768px) {
-  .indexb {
-    padding: 15px;
-    font-size: 12px;
-  }
-  .indexd {
-    padding: 35px;
-  }
+    .indexb {
+        padding: 15px;
+        font-size: 12px;
+    }
+    .indexd {
+        padding: 35px;
+    }
 }
 @media only screen and (max-width: 420px) {
-  .indexb {
-    padding: 5px;
-    font-size: 10px;
-  }
-  .indexd a {
-    padding-bottom: 15px;
-  }
+    .indexb {
+        padding: 5px;
+        font-size: 10px;
+    }
+    .indexd a {
+        padding-bottom: 15px;
+    }
 }
 @media only screen and (max-width: 1200px) {
-  .indexa {
-    background: url(../img/imgp1.jpg);
-    background-size: cover;
-  }
-  .indexb {
-    padding: 20px;
-  }
-  .indexc {
-    background: url(../img/imgp2.jpg);
-    background-size: cover;
-  }
-  .indexd {
-    padding: 35px;
-  }
+    .indexa {
+        background: url(../img/imgp1.jpg);
+        background-size: cover;
+    }
+    .indexb {
+        padding: 20px;
+    }
+    .indexc {
+        background: url(../img/imgp2.jpg);
+        background-size: cover;
+    }
+    .indexd {
+        padding: 35px;
+    }
 }
 @media only screen and (min-width: 576px) and (max-width: 610px) {
-  .nav-item {
-    font-size: medium;
-  }
+    .nav-item {
+        font-size: medium;
+    }
 }
 
+@media only screen and (min-width: 300px) and (max-width: 427px) {
+	.indexb{
+		padding: 5px;
+	}
+
+}
 /*# sourceMappingURL=style.css.map */
